@@ -63,7 +63,7 @@ try:
         ]
         for tabla in tablas:
             conn.execute(text(tabla))  # sentencia encapsulada con text
-        conn.commit()  # confirmar cambios después de insertar datos en tablas
+        conn.commit()  # confirmar cambios/creación de tablas
         print("¡Tablas creadas exitosamente!")
         
         # 3) INSERCIÓN DE DATOS: mismo procedimiento que con tablas, pero todas las sentencias se pueden agrupar en un """ """
@@ -112,7 +112,7 @@ try:
         
         for insert in inserts:
             conn.execute(text(insert))
-        conn.commit() 
+        conn.commit() # confirmar cambios/inserción de datos
         print("¡Datos insertados exitosamente!")
 
 except Exception as e:
