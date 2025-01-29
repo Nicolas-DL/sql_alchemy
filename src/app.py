@@ -3,7 +3,6 @@ from sqlalchemy import create_engine, text
 import pandas as pd
 from dotenv import load_dotenv
 
-
 # 1) CONECTAR A BASE DE DATOS CON LA FUNCIÓN CREATE_ENGINE DE SQLALCHEMY
 
 load_dotenv()
